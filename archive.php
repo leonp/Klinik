@@ -34,7 +34,7 @@
 	
 		<a href="<?php the_permalink(); ?>">
 
-			<article class="slot" role="main" id="content">
+			<article class="slot">
 				
 				<header class="slot-header">
 			

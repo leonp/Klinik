@@ -103,11 +103,6 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		border-bottom: 1px dashed #CFCFCF;
 	}
 	
-	b,
-	strong {
-		font-weight: 600;
-	}
-	
 	pre {
 		overflow: auto;
 		display: block;
@@ -147,7 +142,6 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	.primary {
 		font-size: 1.33333em;
 		padding-bottom: 1.5em;
-		font-weight: 600;
 	}
 	
 	.next {
