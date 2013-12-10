@@ -1,0 +1,496 @@
+﻿/*
+Theme Name: Klinik
+Theme URI: http://leonpaternoster.com/wp-themes/
+Description: My theme
+Version: 0.1
+Author: Leon Paternoster
+Author URI: http://leonpaternoster.com
+Tags: white, flexible-width, microformats
+License: GNU GENERAL PUBLIC LICENSE, Version 3, 29 June 2007
+License URI: http://www.gnu.org/licenses/gpl.html
+*/
+
+
+@media screen, projection {﻿
+
+	body,
+	ul,
+	ol,
+	p,
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	fieldset,
+	dd,
+	figure,
+	figcaption {
+		margin:  0;
+		padding: 0;
+	}
+
+	article,
+	aside,
+	dialog,
+	figure,
+	figcaption,
+	footer,
+	header,
+	hgroup,
+	nav,
+	section,
+	main {
+		display: block;
+	}
+	
+	body {
+		font-family: georgia, serif;
+		line-height: 1.5;
+		color: #333;
+		font-size: 100%;
+	}
+	
+	.accessibility {
+		position: absolute !important;
+		clip: rect(1px 1px 1px 1px);
+		clip: rect(1px, 1px, 1px, 1px);
+	}
+	
+	.wrapper {
+		max-width: 26em;
+		margin: 0 auto;
+		background-color: #FFF;
+		padding: 1.5em;
+	}
+	
+	a:link {
+		color: #114F89;
+		text-decoration: none;
+	}
+	
+	a:visited {
+		color: #114F89;
+	}
+	
+	a:hover,
+	a:focus,
+	a:active {
+		color: #AF0000;
+	}
+	
+	
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	dt {
+		font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
+	}
+	
+	blockquote {
+		font-size: 0.91667em;
+		margin: 1.5em 0 1.5em 3em;
+	}
+	
+	hr {
+		padding: 0.75em 0 0 0;
+		margin: 0 0 0.75em 0;
+		border: none;
+		border-bottom: 1px dashed #CFCFCF;
+	}
+	
+	b,
+	strong {
+		font-weight: 600;
+	}
+	
+	pre {
+		overflow: auto;
+		display: block;
+		margin-bottom: 1.5em;
+		font-family: 'Source code pro', 'andale mono', 'courier new', monospace;
+		color: #669900;
+		font-size: 0.91667em;
+		padding: 0.75em 0;
+	}
+	
+		pre code {
+			font-size: 1em;
+		}
+	
+	code {
+		font-family: 'Source code pro', 'andale mono', 'courier new', monospace;
+		font-size: 0.91667em;
+		color: #669900;
+	}
+	
+	.secondary,
+	.figcaption,
+	.wp-caption-text {
+		color: #888;
+		font-size: 0.83333em;
+	}
+	
+	.clear {
+		clear: both;
+	}
+	
+	.secondary {
+		font-weight: normal;
+		font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
+	}
+	
+	.primary {
+		font-size: 1.33333em;
+		padding-bottom: 1.5em;
+		font-weight: 600;
+	}
+	
+	.next {
+		float: right;
+		text-align: right;
+		width: 45%;
+	}
+	
+	.previous {
+		float: left;
+		width: 45%;
+	}
+		
+	.nav {
+		font-weight: normal;
+		font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
+		margin-bottom: 0.75em;
+		padding-bottom: 0.75em;
+		border-bottom: 0.1875em solid #F1F1F1;
+	}
+	
+		.nav li {
+			display: inline;
+			margin-right: 0.75em;
+		}
+		
+			.nav li img {
+				max-height: 1.5em;
+				width: auto;
+				vertical-align: middle;
+			}
+	
+			.nav li a:link,
+			.nav li a:visited {
+				color: #333;
+			}
+			
+			.nav li a:hover,
+			.nav li a:active,
+			.nav li a:focus {
+				color: #AF0000;
+			}
+			
+			.nav li a:link,
+			.nav li a:visited {
+				color: #114F89;
+			}
+			
+			.nav li a:hover,
+			.nav li a:active,
+			.nav li a:focus {
+				color: #AF0000;
+			}
+			
+				.nav li.current-menu-item a {
+					color: #333;
+					border-bottom: 0.1875em solid #333;
+				}
+			
+	.dagger {
+		border-radius: 50%;
+	}
+	
+	#content {
+		padding-bottom: 1.5em;
+		margin-bottom: 1.5em;
+	}
+	
+	.hentry p,
+	.hentry ul,
+	.hentry ol,
+	.hentry dd {
+		margin-bottom: 0.75em;
+	}
+	
+	.entry-header {
+		padding-bottom: 0.75em;
+	}
+	
+	.entry-title {
+		font-size: 1.33333em;
+		line-height: 1.2em;
+		margin-bottom: 0.3em;
+	}
+	
+	.entry-content img {
+		max-width: 100% !important;
+		height: auto !important;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		border: 1px solid #EFEFEF;
+	}
+	
+	.figcaption {
+		padding-bottom: 0.75em;
+		font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
+	}
+	
+	.entry-content h1,
+	.entry-content h2 {
+		font-size: 1.16667em;
+		line-height: 1.2em;
+		padding: 0.7em 0 0.3em 0;
+	}
+	
+	.entry-content h3 {
+		font-size: 1em;
+		line-height: 1.2em;
+		padding: 0.7em 0 0.3em 0;
+	}
+	
+	.entry-content dt {
+		padding-top: 0.375em;
+	}
+	
+	.entry-content li {
+		margin-left: 1.25em;
+	}
+	
+	.entry-content table {
+		width: 100%;
+		font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
+		margin-bottom: 0.375em;
+		font-size: 0.83333em;
+	}
+	
+	.entry-content a:link {
+		color: #114F89;
+		text-decoration: underline;
+	}
+	
+	.entry-content a:visited {
+		color: #207FD8;
+	}
+	
+	.entry-content a:hover,
+	.entry-content a:focus,
+	.entry-content a:active {
+		color: #AF0000;
+	}
+	
+		.entry-content h1 a:link,
+		.entry-content h2 a:link,
+		.entry-content h3 a:link,
+		.entry-content dt a:link {
+			text-decoration: none;
+		}
+	
+	.entry-footer {
+		padding-top: 0.375em;
+		border-top: 1px solid #F1F1F1;
+		color: #888;
+	}
+	
+	.wp-caption {
+		padding-bottom: 0.75em;
+		max-width: 100% !important;
+		height: auto !important;
+	}
+	
+		.wp-caption img {
+			margin-bottom: 0.375em;
+		}
+		
+	.title {
+		font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
+		font-size: 1.16667em;
+	}
+	
+	.slot {
+		padding-top: 0.375em;
+		margin-bottom: 1.5em;
+		border-top: 1px solid #F1F1F1;
+	}
+	
+		.slot-excerpt p {
+			color: #333;
+		}
+	
+		.slot-title {
+			font-size: 1em;
+			line-height: 1.2em;
+			padding: 0.2em 0 0.1em 0;
+		}
+		
+		.slot-meta {
+			margin-bottom: 0.375em;
+			font-size: 0.83333em;
+		}
+		
+	.big-link {
+		margin-bottom: 1.5em;
+		font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
+		font-size: 1.16667em;
+	}
+		
+	.site-footer {
+		padding: 0.375em 0 1.5em 0;
+		font-weight: normal;
+		font-family: 'Source Sans Pro', 'Open Sans', sans-serif;
+		font-size: 0.83333em;
+		border-top: 1px solid #F1F1F1;
+		clear: both;
+	}
+	
+		.site-footer li {
+			display: inline;
+			margin-right: 1.5em;
+		}
+		
+	
+} /* End main query */
+
+
+@media screen and (min-width: 960px) {
+	
+	body {
+		font-size: 118.75%;
+		margin: 0 auto;
+		background-color: #F1F1F1;
+	}
+	
+	.logo {
+		display: none;
+	}
+	
+	.wrapper {
+		width: 30em;
+		max-width: 30em;
+		padding: 1.5em 4.5em 0.75em 4.5em;
+		margin: 0 auto;
+	}
+	
+	.site-header {
+		margin-bottom: 0.75em;
+		padding-bottom: 0.75em;
+	}
+	
+	.entry-content {
+		-moz-hyphens: auto;
+		-webkit-hyphens: auto;
+		hyphens: auto;
+		padding-bottom: 0.75em;
+	}
+	
+	.entry-content .bleed {
+		margin-left: -4.5em;
+		max-width: 39em !important;
+	}
+	
+	.entry-content h1,
+	.entry-content h2 {
+		font-size: 1.33333em;
+	}
+	
+	.entry-content h3 {
+		font-size: 1.16667em;
+	}
+	
+	.entry-content li {
+		margin-left: 0;
+	}
+	
+	.entry-title {
+		font-size: 2em;
+		margin-bottom: 0.75em;
+	}
+		
+	.entry-footer {
+		padding-bottom: 1.5em;
+	}
+	
+	.site-footer {
+		font-size: 0.83333em;
+	}
+	
+	.nav {
+		padding-top: 1.5em;
+		margin-bottom: 1.5em;
+	}
+	
+		.nav li {
+			margin-right: 1.5em;
+			line-height: 3em;
+			font-weight: 600;
+		}
+	
+			.nav li img {
+				max-height: 3em;
+				width: auto;
+				vertical-align: middle;
+			}
+	
+	
+} /* End widescreen query */
+
+
+@media print {
+
+	* {
+		color: #000;
+		background-color: #FFF;
+		font-size: 100%;
+		line-height: 1.2;
+	}
+	
+	body {
+		font-family: 'Source Sans Pro', 'Open Sans', 'Libre Baskerville', georgia, cambria, 'Bitstream Charter', adobe-caslon-pro, 'Source Sans Pro', 'Open Sans',  calibri, 'lucida grande', sans-serif;
+		width: 66%;
+		margin: 1.2em auto;
+	}
+	
+	.site-header,
+	.site-footer,
+	.accessibility,
+	.logo	{
+		display: none;
+	}
+	
+	.entry-title {
+		font-size: 2em;
+	}
+	
+	.entry-content {
+		-moz-hyphens: auto;
+		-webkit-hyphens: auto;
+		hyphens: auto;
+	}	
+	
+	.entry-prose img {
+		max-width: 100% !important;
+		height: auto !important;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		border: 1px solid #DFDFDF;
+	}
+	
+	.figcaption,
+	.entry-meta,
+	.wp-caption-text {
+		font-size: 0.83333em;
+	}
+
+} /* End print query */
