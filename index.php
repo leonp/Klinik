@@ -30,7 +30,7 @@
 		
 	<?php endwhile; ?>
 
-	<div class="pagination">
+	<div class="pagination clearfix">
 					   
 			<p class="next"><?php previous_posts_link(__('Newer posts &rarr;', "scherzo"), '0'); ?></p>
 			<p class="previous"><?php next_posts_link(__('&larr; Older posts', "scherzo"), '0'); ?></p>

@@ -62,7 +62,7 @@
 
 	<?php endif; ?>
 
-		<div class="pagination">
+		<div class="pagination clearfix">
 						   
 			<p class="next"><?php previous_posts_link(__('Newer posts from this archive &rarr;', "scherzo"), '0'); ?></p>
 			<p class="previous"><?php next_posts_link(__('&larr; Older posts from this archive', "scherzo"), '0'); ?></p>

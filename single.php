@@ -12,9 +12,9 @@
 				
 		</div>
 		
-		<footer class="entry-footer secondary">
+		<footer class="entry-footer clearfix">
 		
-			<p><time itemprop="datePublished" content="<?php the_time('c'); ?>" datetime="<?php the_time('c'); ?>"><?php the_time(get_option('date_format')); ?></time>. Filed under: <?php the_category(', '); ?>.</p>
+			<p class="secondary"><time itemprop="datePublished" content="<?php the_time('c'); ?>" datetime="<?php the_time('c'); ?>"><?php the_time(get_option('date_format')); ?></time>. Filed under: <?php the_category(', '); ?>.</p>
 			
 			<section class="pagination">
 							

@@ -70,15 +70,15 @@ function scherzo_theme_styles()
 
 { 
   
-  wp_register_style( 'source-sans-pro', 
-    'http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,400italic', 
+  wp_register_style( 'source-sans', 
+    'http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,400italic', 
     array(), 
     '20130104', 
     'screen' );
 
   // enqueing:
   
-  wp_enqueue_style( 'source-sans-pro' );
+  wp_enqueue_style( 'source-sans' );
   
   wp_register_style( 'pure-css-tables', 
     'http://yui.yahooapis.com/pure/0.3.0/tables-min.css', 
