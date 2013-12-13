@@ -29,6 +29,9 @@
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		
 		<link rel="icon" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon.jpg">
+		
+		<script src="//use.typekit.net/dom2ywz.js"></script>
+		<script>try{Typekit.load();}catch(e){}</script>
 
 		<?php wp_head(); ?>
 		

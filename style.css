@@ -46,7 +46,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	}
 	
 	body {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: ff-more-web-pro, 'Source Sans Pro', sans-serif;
 		line-height: 1.5;
 		color: #333;
 		font-size: 106.75%;
@@ -101,12 +101,12 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	h5,
 	h6,
 	dt {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: ff-more-web-pro, 'Source Sans Pro', sans-serif;
 	}
 	
 	strong,
 	b {
-		font-weight: 600;
+		font-weight: 500;
 	}
 	
 	blockquote {
@@ -154,7 +154,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	
 	.secondary {
 		font-weight: normal;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: ff-more-web-pro, 'Source Sans Pro', sans-serif;
 	}
 	
 	.primary {
@@ -176,7 +176,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		
 	.nav {
 		font-weight: normal;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: ff-more-web-pro, 'Source Sans Pro', sans-serif;
 		margin-bottom: 0.75em;
 		padding-bottom: 0.75em;
 		border-bottom: 0.1875em solid #F1F1F1;
@@ -245,6 +245,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		font-size: 1.33333em;
 		line-height: 1.2em;
 		margin-bottom: 0.3em;
+		font-weight: 900;
 	}
 	
 	.entry-content img {
@@ -258,7 +259,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	
 	.figcaption {
 		padding-bottom: 0.75em;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: ff-more-web-pro, 'Source Sans Pro', sans-serif;
 	}
 	
 	.entry-content h1,
@@ -266,19 +267,19 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		font-size: 1.16667em;
 		line-height: 1.2em;
 		padding: 0.7em 0 0.3em 0;
-		font-weight: 600;
+		font-weight: 500;
 	}
 	
 	.entry-content h3 {
 		font-size: 1em;
 		line-height: 1.2em;
 		padding: 0.7em 0 0.3em 0;
-		font-weight: 600;
+		font-weight: 500;
 	}
 	
 	.entry-content dt {
 		padding-top: 0.375em;
-		font-weight: 600;
+		font-weight: 500;
 	}
 	
 	.entry-content li {
@@ -287,14 +288,14 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	
 	.entry-content table {
 		width: 100%;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: ff-more-web-pro, 'Source Sans Pro', sans-serif;
 		margin-bottom: 0.375em;
 		font-size: 0.83333em;
 	}
 	
 	.entry-content a:link {
 		color: #114F89;
-		border-bottom: 1px solid;
+		text-decoration: underlined;
 	}
 	
 	.entry-content a:visited {
@@ -335,7 +336,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		}
 		
 	.title {
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: ff-more-web-pro, 'Source Sans Pro', sans-serif;
 		font-weight: normal;
 		font-size: 1.16667em;
 	}
@@ -354,7 +355,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 			font-size: 1em;
 			line-height: 1.2em;
 			padding: 0.2em 0 0.1em 0;
-			font-weight: 600;
+			font-weight: 500;
 		}
 		
 		.slot-meta {
@@ -364,18 +365,17 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		
 	.big-link {
 		margin-bottom: 1.5em;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: ff-more-web-pro, 'Source Sans Pro', sans-serif;
 		font-size: 1.16667em;
 	}
 		
 	.site-footer {
 		padding: 0.375em 0 1.5em 0;
 		font-weight: normal;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: ff-more-web-pro, 'Source Sans Pro', sans-serif;
 		font-size: 0.83333em;
 		border-top: 1px solid #F1F1F1;
 		clear: both;
-		font-weight: 300;
 		text-transform: uppercase;
 	}
 	
@@ -459,7 +459,6 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		.nav li {
 			margin-right: 1.5em;
 			line-height: 3em;
-			font-weight: 300;
 		}
 	
 			.nav li img {
@@ -482,7 +481,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	}
 	
 	body {
-		font-family: 'Source Sans Pro', calibri, 'lucida grande', sans-serif;
+		font-family: ff-more-web-pro, 'Source Sans Pro', calibri, 'lucida grande', sans-serif;
 		width: 66%;
 		margin: 1.2em auto;
 	}
