@@ -66,6 +66,8 @@ function my_save_extra_profile_fields( $user_id ) {
 
 // Add additional styles, inc Open Sans from Google Fonts
 
+/*
+
 function scherzo_theme_styles()
 
 { 
@@ -94,6 +96,7 @@ function scherzo_theme_styles()
 
 add_action('wp_enqueue_scripts', 'scherzo_theme_styles');
 
+*/
 
 // Add shortcodes to widgets
 	
