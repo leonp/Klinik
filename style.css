@@ -46,7 +46,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	}
 	
 	body {
-		font-family: ff-more-web-pro, 'Source Sans Pro', sans-serif;
+		font-family: ff-more-web-pro, georgia, serif;
 		line-height: 1.5;
 		color: #333;
 		font-size: 106.75%;
@@ -101,7 +101,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	h5,
 	h6,
 	dt {
-		font-family: ff-more-web-pro, 'Source Sans Pro', sans-serif;
+		font-family: ff-more-web-pro, georgia, serif;
 	}
 	
 	strong,
@@ -143,7 +143,9 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	
 	.secondary,
 	.figcaption,
-	.wp-caption-text {
+	.wp-caption-text,
+	.comment-notes,
+	.comment-meta {
 		color: #888;
 		font-size: 0.83333em;
 	}
@@ -154,7 +156,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	
 	.secondary {
 		font-weight: normal;
-		font-family: ff-more-web-pro, 'Source Sans Pro', sans-serif;
+		font-family: ff-more-web-pro, georgia, serif;
 	}
 	
 	.primary {
@@ -176,7 +178,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		
 	.nav {
 		font-weight: normal;
-		font-family: ff-more-web-pro, 'Source Sans Pro', sans-serif;
+		font-family: ff-more-web-pro, georgia, serif;
 		margin-bottom: 1.5em;
 		padding-bottom: 0.75em;
 		border-bottom: 0.1875em solid #F1F1F1;
@@ -258,22 +260,25 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	
 	.figcaption {
 		padding-bottom: 0.75em;
-		font-family: ff-more-web-pro, 'Source Sans Pro', sans-serif;
+		font-family: ff-more-web-pro, georgia, serif;
 	}
 	
 	.entry-content h1,
-	.entry-content h2 {
+	.entry-content h2,
+	.comment-heading {
 		font-size: 1.16667em;
 		line-height: 1.2em;
 		padding: 0.7em 0 0.3em 0;
 		font-weight: 500;
 	}
 	
-	.entry-content h3 {
+	.entry-content h3,
+	.comment-reply-title {
 		font-size: 1em;
 		line-height: 1.2em;
 		padding: 0.7em 0 0.3em 0;
 		font-weight: 500;
+		font-style: normal;
 	}
 	
 	.entry-content dt {
@@ -287,7 +292,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	
 	.entry-content table {
 		width: 100%;
-		font-family: ff-more-web-pro, 'Source Sans Pro', sans-serif;
+		font-family: 'Open Sans', 'Source Sans Pro', 'Nimbus Sans L', 'Segoe UI', 'Lucida Grande', Calibri, Arial, sans-serif;
 		margin-bottom: 0.375em;
 		font-size: 0.83333em;
 	}
@@ -335,22 +340,26 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		}
 		
 	.title {
-		font-family: ff-more-web-pro, 'Source Sans Pro', sans-serif;
+		font-family: ff-more-web-pro, georgia, serif;
 		font-weight: normal;
 		font-size: 1.16667em;
 	}
 	
-	.slot {
+	.slot,
+	.comment {
 		padding-top: 0.375em;
 		margin-bottom: 1.5em;
 		border-top: 1px solid #F1F1F1;
+		list-style-type: none;
+		margin-left: 0;
 	}
 	
 		.slot-excerpt p {
 			color: #333;
 		}
 	
-		.slot-title {
+		.slot-title,
+		.comment-author {
 			font-size: 1em;
 			line-height: 1.2em;
 			padding: 0.2em 0 0.1em 0;
@@ -364,14 +373,14 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		
 	.big-link {
 		margin-bottom: 1.5em;
-		font-family: ff-more-web-pro, 'Source Sans Pro', sans-serif;
+		font-family: ff-more-web-pro, georgia, serif;
 		font-size: 1.16667em;
 	}
 		
 	.site-footer {
 		padding: 0.375em 0 1.5em 0;
 		font-weight: normal;
-		font-family: ff-more-web-pro, 'Source Sans Pro', sans-serif;
+		font-family: ff-more-web-pro, georgia, serif;
 		font-size: 0.83333em;
 		border-top: 1px solid #F1F1F1;
 		clear: both;
@@ -381,6 +390,83 @@ License URI: http://www.gnu.org/licenses/gpl.html
 			display: inline;
 			margin-right: 1.5em;
 		}
+		
+	/* COMMENTS */
+	
+	#comments {
+		clear: both;
+		color: #333;
+		font-size: 0.91667em;
+	}
+	
+	.comment-form {
+		padding: 1.5em;
+		background-color: #F1F1F1;
+	}
+	
+	.comment-form label {
+		display: block;
+		font-size: 0.83333em;
+	}
+	
+	#author,
+	#url,
+	#comment,
+	#email {
+		width: 100% !important;
+		height: auto !important;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		border: 1px solid #CFCFCF;
+		font-size: 1.2em;
+		padding: 0.15em 0.3em;
+		font-family: ff-more-web-pro, georgia, serif;
+	}
+	
+	#comment {
+		font-size: 1em;
+	}
+	
+	#submit {
+		font-family: ff-more-web-pro, georgia, serif;
+		padding: 0.15em 0.3em;
+		font-size: 1em;
+	}
+	
+		#submit:hover,
+		#submit:active, 
+		#submit:focus {
+			cursor: pointer;
+		}
+	
+	.form-allowed-tags,
+	.says,
+	.reply {
+		display: none;
+	}
+	
+	.comment-author {
+		margin-bottom: 0.1875em;
+		line-height: 2.25em;
+	}
+	
+	.fn {
+		font-size: 1em;
+		font-style: normal;
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+	
+	.comment-meta {
+		margin-bottom: 0.75em;
+	}
+	
+	.avatar {
+		float: left;
+		margin-right: 0.375em;
+		border-radius: 50%;
+	}
 		
 	
 } /* End main query */

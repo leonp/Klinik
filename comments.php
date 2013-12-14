@@ -8,7 +8,7 @@
 
 	if ( post_password_required() ) { ?>
 	
-		<p class="nocomments"><?php _e("This post is password protected. Enter the password to view comments.", "scherzo"); ?></p>
+		<p class="nocomments">This post is password protected. Enter the password to view comments.</p>
 		
 	<?php
 	
@@ -20,27 +20,19 @@
 
 	<?php if ( have_comments() ) : ?>
 
-		<h1 class="comment-heading"><?php _e("Comments", "scherzo"); ?></h1>
-		
-		<?php previous_comments_link('Older comments') ?>
-		
-		<?php next_comments_link('Newer comments') ?>
+		<h1 class="comment-heading">Comments</h1>
 
-		<ol class="commentlist">
+		<ul class="commentlist">
 		
-			<?php wp_list_comments('avatar_size=24&type=comment'); ?>
+			<?php wp_list_comments('avatar_size=45&type=comment'); ?>
 			
-		</ol>
+		</ul>
 		
-		<ol class="pinglist commentlist">
+		<ul class="pinglist commentlist">
 		
-			<?php wp_list_comments('avatar_size=24&type=pings'); ?>
+			<?php wp_list_comments('avatar_size=45&type=pings'); ?>
 			
-		</ol>
-		
-		<?php previous_comments_link(__('Older comments', "scherzo")) ?>
-		
-		<?php next_comments_link(__('Newer comments', "scherzo")) ?>
+		</ul>
 
 	 <?php else : // this is displayed if there are no comments so far ?>
 
@@ -52,7 +44,7 @@
 		 
 			<!-- If comments are closed. -->
 			
-			<p class="nocomments"><?php _e("Comments are closed.", "scherzo"); ?></p>
+			<p class="nocomments">Comments closed.</p>
 
 		<?php endif; ?> <!-- if comments are open -->
 		

@@ -64,23 +64,11 @@ function my_save_extra_profile_fields( $user_id ) {
 }
 
 
-// Add additional styles, inc Open Sans from Google Fonts
+// Call pure.css for tables
 
-/*
+function klinik_theme_styles()
 
-function scherzo_theme_styles()
-
-{ 
-  
-  wp_register_style( 'source-sans', 
-    'http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,400italic', 
-    array(), 
-    '20130104', 
-    'screen' );
-
-  // enqueing:
-  
-  wp_enqueue_style( 'source-sans' );
+{  
   
   wp_register_style( 'pure-css-tables', 
     'http://yui.yahooapis.com/pure/0.3.0/tables-min.css', 
@@ -94,9 +82,8 @@ function scherzo_theme_styles()
   
 }
 
-add_action('wp_enqueue_scripts', 'scherzo_theme_styles');
+add_action('wp_enqueue_scripts', 'klinik_theme_styles');
 
-*/
 
 // Add shortcodes to widgets
 	

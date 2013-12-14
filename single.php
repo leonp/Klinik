@@ -25,9 +25,7 @@
 			
 			<?php if ('open' == $post->comment_status) { ?>
 			
-				<section id="comments">
-				
-					<?php paginate_comments_links(); ?>
+				<section id="comments" class="clearfix">
 				
 					<?php comments_template(); ?>
 					
