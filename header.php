@@ -57,6 +57,19 @@
 					<li><a href="<?php bloginfo('url'); ?>" rel="index"><img class="dagger" src="<?php bloginfo('stylesheet_directory'); ?>/images/little-beard.jpg" alt="Leon Paternoster"></a></li>		
 					<?php wp_nav_menu(array('theme_location' => 'navigation', 'container' => 'false', 'items_wrap' => '%3$s', 'depth' => '2')); ?>
 					
+					<li class="widescreen">
+					
+						<form role="search" method="get" id="searchform" action="<?php bloginfo('url'); ?>">
+							
+							<label class="screen-reader-text accessibility" for="s">Search for:</label>
+							
+							<input type="search" value="" name="s" id="s">
+							<input type="submit" id="searchsubmit" value="Search">
+							
+						</form>
+						
+					</li>
+					
 				</ul>
 				
 			</nav>

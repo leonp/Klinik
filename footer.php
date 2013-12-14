@@ -13,6 +13,15 @@
 				
 				</ul>
 				
+				<form role="search" method="get" class="basescreen" id="searchform" action="<?php bloginfo('url'); ?>">
+							
+					<label class="screen-reader-text accessibility" for="s">Search for:</label>
+					
+					<input type="search" value="" name="s" id="s">
+					<input type="submit" id="searchsubmit" value="Search">
+					
+				</form>
+				
 			</footer>
 			
 		</div> <!-- end .wrapper -->

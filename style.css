@@ -52,7 +52,8 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		font-size: 106.75%;
 	}
 	
-	.accessibility {
+	.accessibility,
+	.widescreen {
 		position: absolute !important;
 		clip: rect(1px 1px 1px 1px);
 		clip: rect(1px, 1px, 1px, 1px);
@@ -141,6 +142,10 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		color: #669900;
 	}
 	
+	mark {
+		background-color: #FCFA74;
+	}
+	
 	.secondary,
 	.figcaption,
 	.wp-caption-text,
@@ -194,6 +199,18 @@ License URI: http://www.gnu.org/licenses/gpl.html
 				max-height: 1.5em;
 				width: auto;
 				vertical-align: middle;
+			}
+			
+			input[type="search"] {
+				font-family: ff-more-web-pro, georgia, serif;
+				padding: 0.15em 0.3em;
+				width: 17em;
+			}
+			
+			input[type="submit"] {
+				font-family: ff-more-web-pro, georgia, serif;
+				padding: 0.15em 0.3em;
+				cursor: pointer;
 			}
 	
 			.nav li a:link,
@@ -346,7 +363,8 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	}
 	
 	.slot,
-	.comment {
+	.comment,
+	.pingback {
 		padding-top: 0.375em;
 		margin-bottom: 1.5em;
 		border-top: 1px solid #F1F1F1;
@@ -385,6 +403,10 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		border-top: 1px solid #F1F1F1;
 		clear: both;
 	}
+	
+		.site-footer ul {
+			margin-bottom: 0.75em;
+		}
 	
 		.site-footer li {
 			display: inline;
@@ -432,13 +454,8 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		font-family: ff-more-web-pro, georgia, serif;
 		padding: 0.15em 0.3em;
 		font-size: 1em;
+		cursor: pointer;
 	}
-	
-		#submit:hover,
-		#submit:active, 
-		#submit:focus {
-			cursor: pointer;
-		}
 	
 	.form-allowed-tags,
 	.says,
@@ -475,7 +492,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 @media screen and (min-width: 960px) {
 	
 	body {
-		font-size: 137.5%;
+		font-size: 131.25%;
 		margin: 0 auto;
 		background-color: #F1F1F1;
 	}
@@ -489,6 +506,18 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		max-width: 26em;
 		padding: 1.5em 4.5em 0.75em 4.5em;
 		margin: 0 auto;
+	}
+	
+	.widescreen {
+		position: auto !important;
+		clip: auto;
+		clip: auto;
+	}
+	
+	.basescreen {
+		position: absolute !important;
+		clip: rect(1px 1px 1px 1px);
+		clip: rect(1px, 1px, 1px, 1px);
 	}
 	
 	.site-header {
@@ -550,7 +579,12 @@ License URI: http://www.gnu.org/licenses/gpl.html
 				width: auto;
 				vertical-align: middle;
 			}
-	
+			
+			.nav li form {
+				display: inline;
+			}
+				
+					
 	
 } /* End widescreen query */
 
