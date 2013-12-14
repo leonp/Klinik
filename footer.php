@@ -13,7 +13,7 @@
 				
 				</ul>
 				
-				<form role="search" method="get" class="basescreen" id="searchform" action="<?php bloginfo('url'); ?>">
+				<form role="search" method="get" class="basescreen" id="searchform-under" action="<?php bloginfo('url'); ?>">
 							
 					<label class="screen-reader-text accessibility" for="s">Search for:</label>
 					
