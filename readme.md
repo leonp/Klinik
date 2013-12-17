@@ -14,7 +14,7 @@ The theme uses a `ff-more-web-pro, georgia, serif` font stack. If your website v
 
 If you want to use your own font stack you'll need to use a plugin or create a child theme.
 
-## Contact
+## Images
 
 Klinik refers to 2 images in the `/images` folder:
 
@@ -22,6 +22,8 @@ Klinik refers to 2 images in the `/images` folder:
 2. `favicon.jpg`
 
 Replace the pictures of me with some of yourself (or anything else, for that matter).
+
+## Contact
 
 - mail@leonpaternoster.com
 - [@leonpaternoster](http://twitter.com/leonpaternoster)
