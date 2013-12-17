@@ -51,7 +51,7 @@
 						
 				<ul>
 				
-					<li><a href="<?php bloginfo('url'); ?>" rel="index"><img class="dagger" src="<?php bloginfo('stylesheet_directory'); ?>/images/little-beard.jpg" alt="Leon Paternoster"></a></li>		
+					<li><a href="<?php bloginfo('url'); ?>" rel="index"><img class="dagger" src="<?php bloginfo('stylesheet_directory'); ?>/images/portrait.jpg" alt="Leon Paternoster"></a></li>		
 					<?php wp_nav_menu(array('theme_location' => 'navigation', 'container' => 'false', 'items_wrap' => '%3$s', 'depth' => '2')); ?>
 					
 					<li class="widescreen">

@@ -2,7 +2,7 @@
 
 <?php while (have_posts()) : the_post(); ?>
 
-	<article itemscope itemtype="http://schema.org/Article" class="hentry entry" id="content" role="main">
+	<article itemscope itemtype="http://schema.org/Article" class="hentry narrow-content entry" id="content" role="main">
 
 		<h1 itemprop="name" class="entry-title"><?php the_title(); ?></h1>
 

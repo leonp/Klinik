@@ -170,6 +170,23 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		font-style: italic;
 	}
 	
+	.link-list {
+		list-style-type: none;
+		margin-left: none;
+	}
+		
+		.entry-meta.link-list li {
+			display: inline;
+		}
+		
+		.entry-meta.link-list li:after {
+			content: ' / ';
+		}
+		
+			.entry-meta.link-list li:last-child:after {
+				content: '';
+			}
+	
 	.next {
 		float: right;
 		text-align: right;
@@ -212,17 +229,6 @@ License URI: http://www.gnu.org/licenses/gpl.html
 				padding: 0.15em 0.3em;
 				cursor: pointer;
 			}
-	
-			.nav li a:link,
-			.nav li a:visited {
-				color: #333;
-			}
-			
-			.nav li a:hover,
-			.nav li a:active,
-			.nav li a:focus {
-				color: #AF0000;
-			}
 			
 			.nav li a:link,
 			.nav li a:visited {
@@ -230,8 +236,8 @@ License URI: http://www.gnu.org/licenses/gpl.html
 			}
 			
 			.nav li a:hover,
-			.nav li a:active,
-			.nav li a:focus {
+			.nav li a:focus,
+			.nav li a:active {
 				color: #AF0000;
 			}
 			
@@ -264,6 +270,15 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		line-height: 1.2em;
 		margin-bottom: 1.05em;
 		font-weight: 900;
+	}
+	
+	.entry-meta p {
+		margin-bottom: 0;
+	}
+	
+	.taxonomy a {
+		text-transform: lowercase;
+		font-style: italic;
 	}
 	
 	.entry-content img {
@@ -492,7 +507,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 @media screen and (min-width: 960px) {
 	
 	body {
-		font-size: 131.25%;
+		font-size: 125%;
 		margin: 0 auto;
 		background-color: #F1F1F1;
 	}
@@ -502,8 +517,8 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	}
 	
 	.wrapper {
-		width: 26em;
-		max-width: 26em;
+		width: 34em;
+		max-width: 40em;
 		padding: 1.5em 4.5em 0.75em 4.5em;
 		margin: 0 auto;
 	}
@@ -525,7 +540,6 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		padding-bottom: 0.75em;
 	}
 	
-	
 	.entry-content {
 		-moz-hyphens: auto;
 		-webkit-hyphens: auto;
@@ -535,7 +549,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	
 	.entry-content .bleed {
 		margin-left: -4.5em;
-		max-width: 35em !important;
+		max-width: 38.5em !important;
 	}
 	
 	.entry-content h1,
@@ -558,6 +572,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		
 	.entry-footer {
 		padding-bottom: 1.5em;
+		clear:both;
 	}
 	
 	.site-footer {
