@@ -10,6 +10,7 @@
 					
 					<?php } ?>
 					<li><a href="<?php bloginfo('rss2_url'); ?>">RSS</a></li>
+					<br><li><small>Klinik theme by <a href="http://leonpaternoster.com">Leon Paternoster</a></small></li>
 				
 				</ul>
 				

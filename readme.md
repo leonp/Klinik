@@ -23,6 +23,10 @@ Klinik refers to 2 images in the `/images` folder:
 
 Replace the pictures of me with some of yourself (or anything else, for that matter).
 
+## License
+
+Released under the terms of [Creative Commons attribution license](http://creativecommons.org/licenses/by/4.0/) (which means I'd like you to credit me if you use the theme. There's a link to my website in the footer).
+
 ## Contact
 
 - mail@leonpaternoster.com
