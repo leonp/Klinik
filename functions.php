@@ -64,25 +64,39 @@ function my_save_extra_profile_fields( $user_id ) {
 }
 
 
-// Call pure.css for tables
+// Call pure.css for tables and Open Sans. Pluggable.
 
-function klinik_theme_styles()
+if ( !function_exists( 'klinik_theme_styles' ) ) :
 
-{  
-  
-  wp_register_style( 'pure-css-tables', 
-    'http://yui.yahooapis.com/pure/0.3.0/tables-min.css', 
-    array(), 
-    '20130104', 
-    'screen' );
+	function klinik_theme_styles()
 
-  // enqueing:
-  
-  wp_enqueue_style( 'pure-css-tables' );
-  
-}
+	{  
+	  
+	  wp_register_style( 'pure-css-tables', 
+		'http://yui.yahooapis.com/pure/0.3.0/tables-min.css', 
+		array(), 
+		'20130104', 
+		'screen' );
 
-add_action('wp_enqueue_scripts', 'klinik_theme_styles');
+	  // enqueing:
+	  
+	  wp_enqueue_style( 'pure-css-tables' );
+	  
+	  wp_register_style( 'open-sans', 
+		'http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700', 
+		array(), 
+		'20130104', 
+		'screen' );
+
+	  // enqueing:
+	  
+	  wp_enqueue_style( 'open-sans' );
+	  
+	}
+
+	add_action('wp_enqueue_scripts', 'klinik_theme_styles');
+
+endif;
 
 
 // Add shortcodes to widgets

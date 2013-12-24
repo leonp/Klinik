@@ -2,11 +2,11 @@
 
 ## About
 
-Klinik is a WordPress theme. I use it at http://leonpaternoster.com
+Klinik is a WordPress theme. There's also a changelog.
 
 ## Installation
 
-Place the theme files and folders in a folder. Copy this folder to your `/wp-content/themes` folder and choose the Klinik theme from the admin area's `Appearance &rarr; themes` menu.
+Download or clone this repo. Copy the theme folder to your `/wp-content/themes` folder and choose the Klinik theme from the admin area's `Appearance > themes` menu.
 
 ## Fonts
 
@@ -22,6 +22,8 @@ Klinik refers to 2 images in the `/images` folder:
 2. `favicon.jpg`
 
 Replace the pictures of me with some of yourself (or anything else, for that matter).
+
+You can add a `bleed` class to images to make them bleed into the left margin at 960px+
 
 ## License
 
