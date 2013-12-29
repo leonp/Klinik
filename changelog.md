@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.4 2013-12-29
+
+- Added custom background (default `#CFCFCF`)
+- Added custom header. The custom header image is the logo.
+- Cleaned up `archive.php`, removing all references to Scherzo
+- Added responsive nav
+
 ## 0.3 2013-12-24
 
 - Imported Open Sans from Google Fonts (see pluggable `klinik_theme_styles` function in `functions.php`

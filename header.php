@@ -21,8 +21,6 @@
 			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 			
 		<![endif]-->
-
-		<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">
 						
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 		
@@ -44,33 +42,56 @@
 		</ul>
 		
 		<div class="wrapper">
-				
-		<?php if ( has_nav_menu( 'navigation' ) ) { ?>
+		
+		<header class="site-header">
 				
 			<nav class="nav" id="nav" role="navigation">
 						
-				<ul>
-				
-					<li><a href="<?php bloginfo('url'); ?>" rel="index"><img class="dagger" src="<?php bloginfo('stylesheet_directory'); ?>/images/portrait.jpg" alt="Leon Paternoster"></a></li>		
-					<?php wp_nav_menu(array('theme_location' => 'navigation', 'container' => 'false', 'items_wrap' => '%3$s', 'depth' => '2')); ?>
+				<h1 class="site-title">
 					
-					<li class="widescreen">
-					
-						<form role="search" method="get" id="searchform" action="<?php bloginfo('url'); ?>">
-							
-							<label class="screen-reader-text accessibility" for="s">Search for:</label>
-							
-							<input type="search" value="" name="s" id="s">
-							<input type="submit" id="searchsubmit" value="Search">
-							
-						</form>
+					<a href="<?php bloginfo('url'); ?>" rel="index">
 						
-					</li>
+						<?php if (get_header_image() != '') {?>
+						
+							<img class="dagger" src="<?php header_image(); ?>" alt="<?php bloginfo('name'); ?>">
+						
+						<?php } else { ?>
+						
+							<?php bloginfo('name'); ?>
+							
+						<?php } ?>
+						
+					</a>
 					
-					<li class="basescreen"><a href="#searchform-under">Search</a></li>
+				</h1>
+				
+				<?php if ( has_nav_menu( 'navigation' ) ) { ?>
+				
+					<div id="reveal">
+						
+						<ul>
+						
+							<?php wp_nav_menu(array('theme_location' => 'navigation', 'container' => 'false', 'items_wrap' => '%3$s', 'depth' => '2')); ?>
+							
+							<li>
+							
+								<form role="search" method="get" id="searchform" action="<?php bloginfo('url'); ?>">
+									
+									<label class="screen-reader-text accessibility" for="s">Search for:</label>
+									
+									<input type="search" value="" name="s" id="s">
+									<input type="submit" id="searchsubmit" value="Search">
+									
+								</form>
+								
+							</li>
+							
+						</ul>
+						
+					</div> <!-- end #reveal -->
 					
-				</ul>
+				<?php } ?>
 				
 			</nav>
-					
-		<?php } ?>
+			
+		</header>

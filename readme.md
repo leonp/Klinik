@@ -2,7 +2,7 @@
 
 ## About
 
-Klinik is a WordPress theme. There's also a changelog.
+Klinik is a one column, mobile first, responsive WordPress theme.
 
 ## Installation
 
@@ -12,10 +12,10 @@ Download or clone this repo. Copy the theme folder to your `/wp-content/themes` 
 
 Klinik refers to 2 images in the `/images` folder:
 
-1. `portrait.jpg`: The first link in the navigation list. Should be a square picture. The theme resizes automatically.
+1. `portrait.jpg`: The header logo. Should be a square picture. The theme resizes the image automatically.
 2. `favicon.jpg`
 
-Replace the pictures of me with some of yourself (or anything else, for that matter).
+You can change the logo via the `Appearance > Header` menu. Replace the favicon image with your own small jpg.
 
 You can add a `bleed` class to images to make them bleed into the left margin at 960px+
 
