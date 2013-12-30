@@ -1,7 +1,7 @@
 ﻿var navigation = responsiveNav("#reveal", { // Selector: The ID of the wrapper
 	animate: false, // Boolean: Use CSS3 transitions, true or false
 	transition: 0, // Integer: Speed of the transition, in milliseconds
-	label: "Navigation", // String: Label for the navigation toggle
+	label: "Menu", // String: Label for the navigation toggle
 	insert: "before", // String: Insert the toggle before or after the navigation
 	customToggle: "", // Selector: Specify the ID of a custom toggle
 	openPos: "relative", // String: Position of the opened nav, relative or static

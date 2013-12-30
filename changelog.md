@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.41 2013-12-30
+
+- Added right padding to `#nav-toggle` to fix bug in Android Firefox where touching the navicon didn't evoke the navigation menu.
+
 ## 0.4 2013-12-29
 
 - Added custom background (default `#CFCFCF`)
