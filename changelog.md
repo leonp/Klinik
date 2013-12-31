@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.42 2013-12-30
+
+- Site header layout changes. Navicon performs better in Android Firefox.
+- Made link blue contrast with black higher
+- Changed hover/active/focus effect to underline
+- Added `responsive-nav` options to `footer.php` rather than separate `js` file
+
 ## 0.41 2013-12-30
 
 - Added right padding to `#nav-toggle` to fix bug in Android Firefox where touching the navicon didn't evoke the navigation menu.

@@ -6,7 +6,7 @@
 
 	<?php while (have_posts()) : the_post(); ?>
 
-		<a href="<?php the_permalink(); ?>">
+		<a class="slot-wrapper" href="<?php the_permalink(); ?>">
 		
 			<article class="slot">
 				

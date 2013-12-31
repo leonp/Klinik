@@ -103,7 +103,6 @@ if ( !function_exists( 'klinik_scripts_styles' ) ) :
 		wp_enqueue_style( 'open-sans', 'http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700' );
 		wp_enqueue_style( 'pure-css-tables', 'http://yui.yahooapis.com/pure/0.3.0/tables-min.css' );
 		wp_enqueue_script( 'responsive-nav', get_template_directory_uri() . '/js/responsive-nav.min.js', array(), false, false );
-		wp_enqueue_script( 'responsive-nav-options', get_template_directory_uri() . '/js/responsive-nav-options.js', array(), false, true );
 	  
 	}
 

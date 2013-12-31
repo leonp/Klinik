@@ -2,7 +2,7 @@
 Theme Name: Klinik
 Theme URI: http://leonpaternoster.com/wp-themes/
 Description: A simple one column blog theme
-Version: 0.41
+Version: 0.42
 Author: Leon Paternoster
 Author URI: http://leonpaternoster.com
 Tags: white, flexible-width, microformats
@@ -82,19 +82,23 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	}
 	
 	a:link {
-		color: #114F89;
+		color: rgb(0, 0, 238);
 		text-decoration: none;
 	}
 	
 	a:visited {
-		color: #114F89;
+		color: rgb(0, 0, 238);
 	}
 	
 	a:hover,
 	a:focus,
 	a:active {
-		color: #AF0000;
+		text-decoration: underline;
 	}
+	
+		a img {
+			border: none;
+		}
 	
 	
 	h1,
@@ -212,6 +216,46 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		width: 45%;
 	}
 	
+	.g-row {
+		clear: both;
+	}
+	
+		.g-row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		
+	.g-left {
+		float: left;
+		margin-right: 5%;
+	}
+	
+	.g-right {
+		float: right;
+		margin-left: 5%;
+	}
+	
+	.g-last {
+		margin: auto 0;
+	}
+	
+	.g-c-small {
+		width: 10%;
+	}
+	
+	.g-c-large {
+		width: 85%;
+	}
+	
+	.g-c-all {
+		width: 100%;
+	}
+	
+	.g-align-right {
+		text-align: right;
+	}
+	
 	.site-header {
 		border-bottom: 0.1875em solid #F1F1F1;
 		margin-bottom: 1.5em;
@@ -219,7 +263,12 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		font-family: 'Open Sans', calibri, sans-serif;
 		text-transform: uppercase;
 	}
-		
+	
+	.pull-left {
+		clear: both;
+		text-align: left;
+	}
+	
 		.nav img {
 			max-height: 1.5em;
 			width: auto;
@@ -228,7 +277,6 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		
 		.nav li {
 			border-top: 1px solid #F1F1F1;
-			padding: 0.75em 0;
 		}
 		
 			.nav li:last-child {
@@ -237,14 +285,15 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		
 		.nav li a:link,
 		.nav li a:visited {
-			color: #114F89;
+			color: rgb(0, 0, 238);
 			display: block;
+			padding: 0.75em 0;
 		}
 		
 		.nav li a:hover,
 		.nav li a:focus,
 		.nav li a:active {
-			color: #AF0000;
+			text-decoration: underline;
 		}
 		
 			.nav li.current-menu-item a {
@@ -256,7 +305,6 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	}
 	
 	.site-title {
-		float: left;
 		font-size: 1em;
 		line-height: 1.5em;
 	}
@@ -273,11 +321,10 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	#reveal.opened {
 		max-height: 9999em;
 		padding-bottom: 0.75em;
+		text-align: right;
 	}
 	
 	#nav-toggle {
-		text-align: right;
-		display: block;
 		margin-bottom: 0.375em;
 		font-size: 1em;
 		line-height: 1.5em;
@@ -285,7 +332,6 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		background-image: url('images/navicon.png');
 		background-repeat: no-repeat;
 		background-position: center right;
-		color: #FFF;
 	}
 	
 	#s,
@@ -382,7 +428,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	}
 	
 	.entry-content a:link {
-		color: #114F89;
+		color: rgb(0, 0, 238);
 		text-decoration: underlined;
 	}
 	
@@ -393,7 +439,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	.entry-content a:hover,
 	.entry-content a:focus,
 	.entry-content a:active {
-		color: #AF0000;
+		text-decoration: underline;
 	}
 	
 		.entry-content h1 a:link,
@@ -438,6 +484,18 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		list-style-type: none;
 		margin-left: 0;
 	}
+	
+		a.slot-wrapper:hover,
+		a.slot-wrapper:active,
+		a.slot-wrapper:focus {
+			text-decoration: none;
+		}
+		
+			a.slot-wrapper:hover h1,
+			a.slot-wrapper:active h1,
+			a.slot-wrapper:focus h1 {
+					text-decoration: underline;
+				}
 	
 		.slot-excerpt p {
 			color: #333;
