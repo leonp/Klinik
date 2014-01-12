@@ -190,7 +190,8 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	.primary {
 		font-size: 1.33333em;
 		padding-bottom: 1.5em;
-		font-style: italic;
+		font-weight: bold;
+		color: #AAA;
 	}
 	
 	.link-list {
@@ -338,6 +339,8 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		background-image: url('images/navicon.png');
 		background-repeat: no-repeat;
 		background-position: center right;
+		color: #AAA;
+		font-weight: bold;
 	}
 	
 	#s,
@@ -502,8 +505,9 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		margin-top: -1px;
 	}
 	
-		.v-link-list li {
+		.entry-content .v-link-list li {
 			padding: 0.375em 0;
+			margin-left: 0;
 			border-bottom: 1px solid #EFEFEF;
 			margin-bottom: -1px;
 		}
@@ -632,6 +636,10 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		display: none;
 	}
 	
+	.inner {
+		margin: 1.5em;
+	}
+	
 	.wrapper {
 		max-width: 36em;
 		padding: 1.5em 4.5em 0.75em 4.5em;
@@ -688,7 +696,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 			}
 			
 			.nav #s {
-				width: 18em;
+				width: 10em;
 			}
 	
 	.entry-content {
@@ -736,7 +744,15 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		}			
 					
 	
-} /* End widescreen query */
+} /* End main widescreen query */
+
+@media screen and (min-width: 960px) {
+
+	.nav #s {
+		width: 16em;
+	}
+	
+} /* End wider screen query */
 
 
 @media print {
