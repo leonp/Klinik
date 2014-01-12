@@ -2,7 +2,7 @@
 Theme Name: Klinik
 Theme URI: http://leonpaternoster.com/wp-themes/
 Description: A simple one column blog theme
-Version: 0.42
+Version: 0.5
 Author: Leon Paternoster
 Author URI: http://leonpaternoster.com
 Tags: white, flexible-width, microformats
@@ -50,6 +50,8 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		line-height: 1.5;
 		color: #333;
 		font-size: 100%;
+		margin: 0;
+		padding: 0;
 	}
 	
 	.accessibility,
@@ -60,11 +62,14 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		clip: rect(1px, 1px, 1px, 1px);
 	}
 	
+	.inner {
+		padding: 1.5em;
+		background-color: #FFF;
+	}
+	
 	.wrapper {
 		max-width: 26em;
 		margin: 0 auto;
-		background-color: #FFF;
-		padding: 1.5em;
 	}
 	
 	.clearfix:before,
@@ -165,8 +170,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	}
 	
 	.secondary,
-	.figcaption,
-	.wp-caption-text,
+	.figure figcaption,
 	.comment-notes,
 	.comment-meta {
 		color: #888;
@@ -293,7 +297,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		.nav li a:hover,
 		.nav li a:focus,
 		.nav li a:active {
-			text-decoration: underline;
+			text-decoration: none;
 		}
 		
 			.nav li.current-menu-item a {
@@ -337,7 +341,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	#s,
 	#searchsubmit {
 		font-size: 1em;
-		padding: 0.1875em;
+		padding: 0.1875em 0.375em;
 	}
 	
 	#s {
@@ -374,24 +378,12 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		font-style: italic;
 	}
 	
-	.entry-content img,
-	.wp-caption {
-		max-width: 100% !important;
-		height: auto !important;
-	}
-	
 	.entry-content img {
 		max-width: 100% !important;
 		height: auto !important;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
-		border: 1px solid #EFEFEF;
-	}
-	
-	.figcaption {
-		padding-bottom: 0.75em;
-		font-family: 'Open Sans', calibri, sans-serif;
 	}
 	
 	.entry-content h1,
@@ -448,31 +440,19 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		.entry-content dt a:link {
 			text-decoration: none;
 		}
+		
+	.figure {
+		padding-bottom: 0.75em;
+	}
+	
+		.figure>figcaption {
+			margin: 0.75em 0;
+		}
 	
 	.entry-footer {
 		padding-top: 0.375em;
 		border-top: 1px solid #F1F1F1;
 		color: #888;
-	}
-	
-	.wp-caption {
-		padding-bottom: 0.75em;
-		max-width: 100% !important;
-		height: auto !important;
-	}
-	
-		.wp-caption img {
-			margin-bottom: 0.375em;
-		}
-		
-		.wp-caption a:link {
-			border: 0;
-		}
-		
-	.title {
-		font-family: 'Open Sans', calibri, sans-serif;
-		font-weight: 600;
-		font-size: 1.16667em;
 	}
 	
 	.slot,
@@ -618,7 +598,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 } /* End main query */
 
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 760px) {
 	
 	body {
 		font-size: 106.75%;
@@ -631,7 +611,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 	}
 	
 	.wrapper {
-		max-width: 30em;
+		max-width: 36em;
 		padding: 1.5em 4.5em 0.75em 4.5em;
 		margin: 0 auto;
 	}
@@ -653,21 +633,47 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		padding-bottom: 0.75em;
 	}
 	
-	#nav-toggle {
-		font-size: 1em;
-		line-height: 3em;
+	.js #reveal {
+		position: relative;
 	}
+	
+	.js #reveal.closed {
+		max-height: none;
+	}
+	
+	#nav-toggle {
+		display: none;
+	}
+
+	.nav {
+		line-height: 3em;
+		font-weight: bold;
+	}
+	
+		.nav li {
+			display: inline;
+			width: auto;
+			border: none;
+			margin-left: 1.5em;
+		}
+		
+			.nav li a:link {
+				display: inline;
+			}
+			
+			.nav li form {
+				display: inline;
+			}
+			
+			.nav #s {
+				width: 18em;
+			}
 	
 	.entry-content {
 		-moz-hyphens: auto;
 		-webkit-hyphens: auto;
 		hyphens: auto;
 		padding-bottom: 1.5em;
-	}
-	
-	.entry-content .bleed {
-		margin-left: -4.5em;
-		max-width: 39em !important;
 	}
 	
 	.entry-content h1,
@@ -754,9 +760,8 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		border: 1px solid #DFDFDF;
 	}
 	
-	.figcaption,
-	.entry-meta,
-	.wp-caption-text {
+	.figure figcaption,
+	.entry-meta {
 		font-size: 0.83333em;
 	}
 

@@ -10,14 +10,11 @@ Download or clone this repo. Copy the theme folder to your `/wp-content/themes` 
 
 ## Images
 
-Klinik refers to 2 images in the `/images` folder:
+Klinik refers to an image in the `/images` folder:
 
-1. `portrait.jpg`: The header logo. Should be a square picture. The theme resizes the image automatically.
-2. `favicon.jpg`
+`portrait.jpg` is the header logo. Should be a square picture. The theme resizes the image automatically.
 
 You can change the logo via the `Appearance > Header` menu. Replace the favicon image with your own small jpg.
-
-You can add a `bleed` class to images to make them bleed into the left margin at 960px+
 
 ## Custom archives page
 

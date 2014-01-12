@@ -32,8 +32,8 @@
 
 	<div class="pagination clearfix">
 					   
-			<p class="next"><?php previous_posts_link(__('Newer posts &rarr;', "scherzo"), '0'); ?></p>
-			<p class="previous"><?php next_posts_link(__('&larr; Older posts', "scherzo"), '0'); ?></p>
+			<p class="next"><strong><?php previous_posts_link('Newer posts &rarr;', '0'); ?></strong></p>
+			<p class="previous"><strong><?php next_posts_link('&larr; Older posts', '0'); ?></strong></p>
 	   
 	</div> <!-- end .pagination -->
 	

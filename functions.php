@@ -1,6 +1,12 @@
 ﻿<?php
 
-// Allow additional features (feed links)
+// Call the cleanup script
+// It cleans the wp header and image markup
+
+require_once('lib/clean.php');
+
+
+// Allow additional features (feed links and shortcodes in widgets)
 
 add_theme_support('automatic-feed-links');
 add_filter('widget_text', 'do_shortcode');
@@ -11,7 +17,7 @@ add_filter('widget_text', 'do_shortcode');
 add_theme_support( 'custom-background' );
 
 $args = array(
-	'default-color'          => 'CFCFCF',
+	'default-color'          => 'EFEFEF',
 	'default-image'          => '',
 	'wp-head-callback'       => '_custom_background_cb',
 	'admin-head-callback'    => '',
@@ -22,6 +28,7 @@ add_theme_support( 'custom-background', $args );
 
 
 // Add a custom header (default is of Mr Leon Paternoster)
+// This image is used as a the logo (or pic) that appears top left
 
 $args = array(
 	'flex-width'    => true,

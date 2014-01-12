@@ -25,8 +25,6 @@
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 		
 		<link rel="profile" href="http://gmpg.org/xfn/11">
-		
-		<link rel="icon" href="<?php bloginfo('stylesheet_directory'); ?>/images/favicon.jpg">
 
 		<?php wp_head(); ?>
 		
@@ -41,69 +39,71 @@
 			
 		</ul>
 		
-		<div class="wrapper">
+		<div class="inner">
 		
-		<header class="site-header">
-				
-			<nav class="nav" id="nav" role="navigation">
-			
-				<div class="g-row">
-				
-					<div class="g-left g-c-small">
-						
-						<h1 class="site-title">
-							
-							<a href="<?php bloginfo('url'); ?>" rel="index">
-								
-								<?php if (get_header_image() != '') {?>
-								
-									<img class="dagger" src="<?php header_image(); ?>" alt="<?php bloginfo('name'); ?>">
-								
-								<?php } else { ?>
-								
-									<?php bloginfo('name'); ?>
-									
-								<?php } ?>
-								
-							</a>
-							
-						</h1>
-						
-					</div>
-				
-				<?php if ( has_nav_menu( 'navigation' ) ) { ?>
-				
-					<div class="g-right g-align-right g-c-large g-last">
-				
-						<div id="reveal">
-							
-							<ul class="pull-left">
-							
-								<?php wp_nav_menu(array('theme_location' => 'navigation', 'container' => 'false', 'items_wrap' => '%3$s', 'depth' => '2')); ?>
-								
-								<li>
-								
-									<form role="search" method="get" id="searchform" action="<?php bloginfo('url'); ?>">
-										
-										<label class="screen-reader-text accessibility" for="s">Search for:</label>
-										
-										<input type="search" value="" name="s" id="s">
-										<input type="submit" id="searchsubmit" value="Search">
-										
-									</form>
-									
-								</li>
-								
-							</ul>
-							
-						</div> <!-- end #reveal -->
-						
-					</div>
+			<header class="site-header">
 					
-				</div> <!-- end .g-row -->
-					
-			<?php } ?>
+				<nav class="nav" id="nav" role="navigation">
 				
-			</nav>
-			
-		</header>
+					<div class="g-row">
+					
+						<div class="g-left g-c-small">
+							
+							<h1 class="site-title">
+								
+								<a href="<?php bloginfo('url'); ?>" rel="index">
+									
+									<?php if (get_header_image() != '') {?>
+									
+										<img class="dagger" src="<?php header_image(); ?>" alt="<?php bloginfo('name'); ?>">
+									
+									<?php } else { ?>
+									
+										<?php bloginfo('name'); ?>
+										
+									<?php } ?>
+									
+								</a>
+								
+							</h1>
+							
+						</div>
+					
+					<?php if ( has_nav_menu( 'navigation' ) ) { ?>
+					
+						<div class="g-right g-align-right g-c-large g-last">
+					
+							<div id="reveal">
+								
+								<ul>
+								
+									<?php wp_nav_menu(array('theme_location' => 'navigation', 'container' => 'false', 'items_wrap' => '%3$s', 'depth' => '2')); ?>
+									
+									<li>
+									
+										<form role="search" method="get" id="searchform" action="<?php bloginfo('url'); ?>">
+											
+											<label class="screen-reader-text accessibility" for="s">Search for:</label>
+											
+											<input type="search" value="" name="s" id="s">
+											<input type="submit" id="searchsubmit" value="Search">
+											
+										</form>
+										
+									</li>
+									
+								</ul>
+								
+							</div> <!-- end #reveal -->
+							
+						</div>
+						
+					</div> <!-- end .g-row -->
+						
+				<?php } ?>
+					
+				</nav>
+				
+			</header>
+		
+			<div class="wrapper">

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.5 2014-01-12
+
+- Site header layout changes. Widescreen shows full menu.
+- Header extends across whole screen width
+- Removed reference to favicon in `header.php`
+- Removed `bleed` images as no margin to bleed into
+
 ## 0.42 2013-12-30
 
 - Site header layout changes. Navicon performs better in Android Firefox.
