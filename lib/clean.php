@@ -4,8 +4,6 @@
 add_action('after_setup_theme','klinik_startup');
 
 function klinik_startup() {
-
-	add_action('init', 'klinik_head_cleanup');
 	
     // launching operation cleanup
     add_action('init', 'klinik_head_cleanup');
@@ -20,7 +18,7 @@ function klinik_startup() {
     add_action('wp_head', 'klinik_remove_recent_comments_style', 1);
 	
     // clean up gallery output in wp
-    add_filter('gallery_style', 'klinik_gallery_style');    
+    // add_filter('gallery_style', 'klinik_gallery_style');    
 	
     // additional post related cleaning
     add_filter( 'img_caption_shortcode', 'klinik_cleaner_caption', 10, 3 );
@@ -113,11 +111,11 @@ function klinik_remove_recent_comments_style() {
 
 
 // remove injected CSS from gallery
-function klinik_gallery_style($css) {
+// function klinik_gallery_style($css) {
 
-  return preg_replace("!<style type='text/css'>(.*?)</style>!s", '', $css);
+// return preg_replace("!<style type='text/css'>(.*?)</style>!s", '', $css);
   
-}
+// }
 
 
 // Customized the output of caption. You can remove the filter to restore back to the WP default output.

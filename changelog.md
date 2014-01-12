@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.51 2014-01-12
+
+- Reallowed WP to inject `style` in `head` (so we can use custom backgrounds)
+- Styled vertical link lists
+- `display: none` applied to `cat-list li` to get rid of non cat lists in `wp_list_categories`
+
 ## 0.5 2014-01-12
 
 - Site header layout changes. Widescreen shows full menu.

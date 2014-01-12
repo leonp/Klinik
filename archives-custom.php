@@ -18,13 +18,13 @@ Template Name: Archive listing page
 		
 			<?php the_content(); ?>
 	
-			<ul class="archive-list">
+			<ul class="v-link-list cat-list">
 			
 			<?php
 			
 				// List all categories
 				
-				wp_list_categories( 'show_option_all=1&show_count=1&&title_li=' );
+				wp_list_categories( 'show_option_all=1&show_count=1&title_li=' );
 				
 			?>
 				
@@ -34,7 +34,7 @@ Template Name: Archive listing page
 
 			<h2>Every post</h2>
 
-			<ul class="archive-list">
+			<ul class="v-link-list">
 
 			<?php 
 

@@ -2,7 +2,7 @@
 Theme Name: Klinik
 Theme URI: http://leonpaternoster.com/wp-themes/
 Description: A simple one column blog theme
-Version: 0.5
+Version: 0.51
 Author: Leon Paternoster
 Author URI: http://leonpaternoster.com
 Tags: white, flexible-width, microformats
@@ -290,7 +290,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		
 		.nav li a:link,
 		.nav li a:visited {
-			color: rgb(0, 0, 238);
+			color: #AAA;
 			display: block;
 			padding: 0.75em 0;
 		}
@@ -299,6 +299,7 @@ License URI: http://www.gnu.org/licenses/gpl.html
 		.nav li a:focus,
 		.nav li a:active {
 			text-decoration: none;
+			color: rgb(0, 0, 238);
 		}
 		
 			.nav li.current-menu-item a {
@@ -494,6 +495,26 @@ License URI: http://www.gnu.org/licenses/gpl.html
 			margin-bottom: 0.375em;
 			font-size: 0.83333em;
 		}
+		
+	.v-link-list {
+		list-style-type: none;
+		border-top: 1px solid #EFEFEF;
+		margin-top: -1px;
+	}
+	
+		.v-link-list li {
+			padding: 0.375em 0;
+			border-bottom: 1px solid #EFEFEF;
+			margin-bottom: -1px;
+		}
+		
+	.cat-list li {
+		display: none;
+	}
+		
+	.cat-list li[class^="cat"] {
+		display: block;
+	}
 		
 	.big-link {
 		margin-bottom: 1.5em;
